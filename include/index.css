@@ -1,13 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
   margin: 0px;
   padding: 0px;
   color: seashell;
-  font-style: Helvetica;
+  font-family: Helvetica;
   font-size: 22px;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 header {
@@ -34,30 +41,38 @@ header a {
   padding-right: 20px;
 }
 
-main {
-  position: relative;
-  top: 69px;
+.top {
   display: flex;
   flex-direction: column;
+  background-image: url('img-mission-background.jpg');
+  align-items: stretch;
+  justify-content: center;
+  width: 1200px;
+  height: 700px;
+  position: relative;
+  top: 69px;
+}
+
+.toptext {
+  background-color: black;
+  text-align: center;
+}
+
+h2,
+h4 {
+  padding: 10px 0px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
 }
 
 footer {
   position: relative;
   top: 69px;
-}
-
-.top {
-  display: flex;
-  flex-direction: column;
-  background-image: url('img-mission-background.jpg');
-  flex: 0 1 700px;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-}
-
-.top > h2 {
-  color: seashell;
-  font-style: Helvetica;
-  background-color: black;
 }
